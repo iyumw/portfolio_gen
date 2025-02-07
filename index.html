@@ -8,20 +8,26 @@
     <meta name="keywords=" content="HTML, CSS JavaScript" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
     <title>Portfólio - Isis</title>
   </head>
   <body>
-    <header>
-      <div id="header_content">
+    <header class="flex menu_container">
+      <div id="header_content" class="menu_content">
         <div id="titulo">
           <h1><a href="#">Portfólio</a></h1>
-          <h2>Isis Okamoto</h2>
         </div>
 
-        <div id="menu">
+        <div class="flex" id="menu">
           <nav>
             <div id="menu_links">
-              <ul>
+              <ul class="flex menu_list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
@@ -33,29 +39,28 @@
       </div>
     </header>
     <main>
-      <section id="home">
-        <article id="home_text">
+      <section id="home" class="home_container">
+        <article id="home_text" class="flex home_content">
           <h4>Bem-vindo ao Meu Portfólio!!</h4>
-          <h1>Conheça um pouco mais sobre os meus trabalhos :D</h1>
+          <h1>Conheça um pouco mais sobre os meus trabalhos</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
             quibusdam voluptas sunt natus consequuntur! Laboriosam quos eveniet
             necessitatibus vel? Error, nesciunt incidunt recusandae reiciendis
             iste fugiat reprehenderit ullam nisi tempore!
           </p>
-          <a href="https://github.com/iyumw" target="_blank">Saiba mais</a>
+          <a class="botao" href="https://github.com/iyumw" target="_blank">Saiba mais</a>
         </article>
 
         <article id="home_image">
           <img
             src="./assets/img/astronauta.svg"
             alt="Capacete de Astronauta Animado"
-            style="height: 200px"
           />
         </article>
       </section>
 
-      <section id="about">
+      <section id="about" class="about_container">
         <img
           src="./assets/img/user_02.svg"
           alt="Foto do perfil do GitHub"
@@ -69,14 +74,9 @@
             tempore minus doloribus aut. Molestias, tempora. Autem, veniam
             placeat.
           </p>
-          <ul>
-            <li>Nome: Isis Okamoto</li>
-            <li>Idade: 20 anos</li>
-            <li>Email: isis.yume2508@gmail.com</li>
-          </ul>
 
-          <div id="about_github">
-            <a href="https://github.com/iyumw" target="_blank">GitHub</a>
+          <div id="about_github" class="flex about_github">
+            <a class="botao" href="https://github.com/iyumw" target="_blank">GitHub</a>
             <p>20 Seguidores</p>
             <p>20 Repositórios</p>
           </div>
@@ -117,7 +117,7 @@
             <input type="submit" value="Enviar" />
       </section>
     </main>
-    <footer>
+    <footer class="flex">
       <p>&copy; 2025 Isis Okamoto. Todos os direitos reservados.</p>
     </footer>
   </body>
