@@ -10,18 +10,21 @@
 }
 
 :root{
+
+    --title-font-family: 'Playfair Display', sans-serif;
+
     --gray-400: #505861;
  
     --white: #F9F9F9;
 
     --main-background: #f5f5f5;
     --main-text: #171717;
-    --main-button: #4a306d;
-    --main-highlight:: #0e273c;
-    --hover: #392b58;
+    --button-color: #4a306d;
+    --highlight-color: #0e273c;
+    --hover-color: #392b58;
 
     --secondary-background: #ccb9eb;
-    --dark-secondary-background: #b096dd;
+    --dark-secondary-color: #b096dd;
 
     --color-links: #4a306d;
 }
@@ -47,14 +50,19 @@ button, a{
     text-align: center;
     padding: 12px 32px;
     background: none;
-    border: 1px solid var(--main-button);
+    border: 1px solid var(--button-color);
     border-radius: 10px;
     font-weight: 700;
     transition: background-color 0.3s ease;
 }
 
+.secondary_btn{
+    border: 1px solid var(--dark-secondary-color);
+    color: var(--dark-secondary-color);
+}
+
 .botao:hover {
-    background-color: var(--hover);
+    background-color: var(--hover-color);
     color: var(--white);
 }
 
@@ -68,7 +76,7 @@ button, a{
 
 .menu_container{
     height: 80px;
-    background-color: var(--dark-secondary-background);
+    background-color: var(--dark-secondary-color);
     position: sticky;
     top: 0;
     width: 100%;
@@ -77,6 +85,7 @@ button, a{
 }
 
 .menu_container a{
+    /* font-family: var(--title-font-family); */
     font-size: 1.25rem;
     color: var(--white);
     font-weight: 700;
@@ -105,6 +114,14 @@ button, a{
     margin-left: 1rem;
 }
 
+#menu_content_sucess {
+    max-width: 1120px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* home */
 
 .home_container{
@@ -123,23 +140,28 @@ button, a{
 }
 
 .home_container h1{
+    font-family: var(--title-font-family);
+    color: var(--highlight-color);
     font-size: 2.25rem;
     line-height: 3rem;
     font-weight: 700;
 }
 
 .home_container h4{
+    font-family: var(--title-font-family);
     font-weight: 700;
 }
 
 .home_container p{
-    margin: 1.25rem 0;
+    margin: 1.25rem 0 0 0;
 }
 
 .home_container .botao{
     width: 25%;
-    display: flex;
-    justify-content: center;
+    margin-top: 1rem;
+    display: block; /* Para o alinhamento vertical funcionar corretamente */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
 }
 
 .home_content{
@@ -157,10 +179,10 @@ button, a{
 .about_container {
     max-width: 100%;
     margin: -24px auto;
-    padding: 0 3rem;
+    padding: 0 10rem;
     height: 80vh;
     background-color: var(--secondary-background);
-    border-radius: 15px;
+    border-radius: 45px;
 
     display: flex;
     justify-content: center;
@@ -170,11 +192,13 @@ button, a{
 .about_container img {
     display: flex;
     width: 200px;
-    border: 5px solid var(--dark-secondary-background);
+    border: 5px solid var(--dark-secondary-color);
     border-radius: 50%;
 }
 
 .about_container h2 {
+    font-family: var(--title-font-family);
+    color: var(--highlight-color);
     font-size: 32px;
     text-align: center;
     line-height: 48px;
@@ -200,6 +224,7 @@ button, a{
 .contato_container {
     max-width: 1120px;
     margin: 64px auto 32px;
+    height: 50vh;
     padding: 0 32px;
 
     display: grid;
@@ -210,6 +235,8 @@ button, a{
 }
 
 .contato_container h4 {
+    font-family: var(--title-font-family);
+    color: var(--highlight-color);
     font-size: 32px;
     font-weight: bold;
     margin: 16px 0;
@@ -261,7 +288,7 @@ footer {
     margin: 0;
     padding: 32px;
     color: var(--white);
-    background-color: var(--dark-secondary-background);
+    background-color: var(--dark-secondary-color);
     filter: opacity(0.9);
     font-weight: bold;
     text-align: center;
