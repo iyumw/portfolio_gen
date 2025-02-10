@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projeto Generation Portfólio" />
+    <meta name="description" content="Generation Portfolio Project" />
     <meta name="author" content="Isis Okamoto" />
-    <meta name="keywords=" content="HTML, CSS JavaScript" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="icon" href="./assets/favicon/favicon.ico" />
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <title>Portfólio - Isis</title>
+    <title>Portfolio - Isis</title>
   </head>
   <body>
     <header class="flex menu_container">
       <div id="header_content" class="menu_content">
         <div id="titulo">
-          <h1><a href="#">Portfólio</a></h1>
+          <a href="#">Yume's Portfolio</a>
         </div>
 
         <div class="flex" id="menu">
@@ -29,9 +29,9 @@
             <div id="menu_links">
               <ul class="flex menu_list">
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -41,86 +41,89 @@
     <main>
       <section id="home" class="home_container">
         <article id="home_text" class="flex home_content">
-          <h4>Bem-vindo ao Meu Portfólio!!</h4>
-          <h1>Conheça um pouco mais sobre os meus trabalhos</h1>
+          <h4>Welcome to My Portfolio!!</h4>
+          <h1>Transforming Ideas into Smart Solutions</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-            quibusdam voluptas sunt natus consequuntur! Laboriosam quos eveniet
-            necessitatibus vel? Error, nesciunt incidunt recusandae reiciendis
-            iste fugiat reprehenderit ullam nisi tempore!
+            Hello, my name is Isis Yume! Here, you will find some of the projects I have developed using HTML, CSS, React, TypeScript, NestJS, SQL, and more. Feel free to explore my work, and if you want to know more, get in touch!
           </p>
-          <a class="botao" href="https://github.com/iyumw" target="_blank">Explorar</a>
+          <a class="botao" href="http://linkedin.com/in/isis-okamoto" target="_blank">Explore</a>
         </article>
 
-        <article id="home_image">
+        <article id="home_image" class="home_content">
           <img
-            src="./assets/img/astronauta.svg"
-            alt="Capacete de Astronauta Animado"
+            src="./assets/img/Witch.gif"
+            alt="Animated Astronaut Helmet"
           />
         </article>
       </section>
 
-      <section id="about" class="about_container">
+      <section id="about" class="flex about_container">
         <img
-          src="./assets/img/user_02.svg"
-          alt="Foto do perfil do GitHub"
+          src="./assets/img/eu.jpg"
+          alt="GitHub Profile Picture"
         />
         <article id="about_text">
-          <h2>Sobre mim</h2>
+          <h2>About Me</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
-            autem quia recusandae perspiciatis facilis expedita, quidem veniam,
-            tempore minus doloribus aut. Molestias, tempora. Autem, veniam
-            placeat.
+            My name is Isis, but you can call me Yume! I am a 20 years old Fullstack Developer specialized in JavaScript, and also a student of Information Systems. I am passionate about solving problems and developing functional and intuitive applications. My training has allowed me to explore and apply technologies such as React, Nest.js, SQL, Java, Spring and Python.
+          </p>
+          <p>
+            Besides technology, I am an amateur swimmer and believe that discipline, persistence, and continuous learning are essential both in sports and programming. I am always looking to improve my skills and contribute with innovative solutions.
+          </p>
+          <p>
+            Want to know more about my projects? Check out my GitHub!
           </p>
 
-          <div id="about_github" class="flex about_github">
+          <div class="flex about_github">
             <a class="botao" href="https://github.com/iyumw" target="_blank">GitHub</a>
-            <p>20 Seguidores</p>
-            <p>20 Repositórios</p>
+            <p>20 Followers</p>
+            <p>20 Repositories</p>
           </div>
         </article>
       </section>
 
       <section id="contact" class="contato_container">
+        <div class="contact-image-container">
+          <img src="./assets/img/coven.svg" alt="Bruxinhas juntas" class="contact-image" />
+        </div>
         <article id="redes_sociais" class="contato_content">
-          <h4>Contate-me</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error labore, dolor sunt voluptatum libero harum eum ea, fugiat possimus cumque id reprehenderit a earum dicta alias voluptates consequuntur iste omnis.</p>
-          <div id="icon_social">
-            <a href="http://linkedin.com/in/isis-okamoto" target="_blank">
-              <img src="./assets/img/linkedin.svg" alt="Ícone LinkedIn" />
-            </a>
-            <a href="http://github.com/iyumw" target="_blank">
-              <img src="./assets/img/github.svg" alt="Ícone GitHub" />
-            </a>
-            <a href="http://instagram.com/_iyume" target="_blank">
-              <img src="./assets/img/instagram.svg" alt="Ícone instagram" />
-            </a>
-          </div>
+          <h4>Contact Me</h4>
+          <p>Get in touch! If you want to know more about my work, exchange ideas, or discuss potential collaborations, send me a message. I am available on LinkedIn, GitHub, and email!</p>
+            <div class="social_container">
+              <a href="http://linkedin.com/in/isis-okamoto" target="_blank" class="social_icon">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn Icon" />
+              </a>
+              <a href="http://github.com/iyumw" target="_blank" class="social_icon">
+                <img src="./assets/img/github.svg" alt="GitHub Icon" />
+              </a>
+              <a href="http://instagram.com/_iyume" target="_blank" class="social_icon">
+                <img src="./assets/img/instagram.svg" alt="Instagram Icon" />
+              </a>
+            </div>
         </article>
         
-        <form action="./success.html" method="" id="contact_form">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required />
+        <form action="./success.html" method="POST" id="contact_form">
+            <label for="nome">Name:</label>
+            <input type="text" name="nome" id="nome" placeholder="Enter your name" required />
             <span id="txtNome"></span>
 
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required />
+            <input type="email" name="email" id="email" placeholder="Enter your email" required />
             <span id="txtEmail"></span>
             
-            <label for="assunto">Assunto:</label>
-            <input type="text" name="assunto" id="assunto" placeholder="Digite sua mensagem" required></textarea>
+            <label for="assunto">Subject:</label>
+            <input type="text" name="assunto" id="assunto" placeholder="Enter your message" required></textarea>
             <span id="txtAssunto"></span>
             
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+            <label for="mensagem">Message:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Enter your message" required></textarea>
             <span id="txtMensagem"></span>
 
-            <input type="submit" value="Enviar" />
+            <button type="submit" class="botao">Send</button>
       </section>
     </main>
     <footer class="flex">
-      <p>&copy; 2025 Isis Okamoto. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Isis Okamoto. All rights reserved.</p>
     </footer>
   </body>
 </html>
