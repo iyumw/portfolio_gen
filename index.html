@@ -58,28 +58,7 @@
       </section>
 
       <section id="about" class="flex about_container">
-        <img
-          src="./assets/img/eu.jpg"
-          alt="GitHub Profile Picture"
-        />
-        <article id="about_text">
-          <h2>About Me</h2>
-          <p>
-            My name is Isis, but you can call me Yume! I am a 20 years old Fullstack Developer specialized in JavaScript, and also a student of Information Systems. I am passionate about solving problems and developing functional and intuitive applications. My training has allowed me to explore and apply technologies such as React, Nest.js, SQL, Java, Spring and Python.
-          </p>
-          <p>
-            Besides technology, I am an amateur swimmer and believe that discipline, persistence, and continuous learning are essential both in sports and programming. I am always looking to improve my skills and contribute with innovative solutions.
-          </p>
-          <p>
-            Want to know more about my projects? Check out my GitHub!
-          </p>
-
-          <div class="flex about_github">
-            <a class="botao" href="https://github.com/iyumw" target="_blank">GitHub</a>
-            <p>20 Followers</p>
-            <p>20 Repositories</p>
-          </div>
-        </article>
+        
       </section>
 
       <section id="contact" class="contato_container">
@@ -102,17 +81,20 @@
             </div>
         </article>
         
-        <form action="./success.html" method="POST" id="contact_form">
+        <form action="https://formsubmit.co/b0132c38301e12767e2b8c54d6e59e0f" method="POST" id="formulario">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+            <input type="hidden" name="_captcha" value="false">
+
             <label for="nome">Name:</label>
-            <input type="text" name="nome" id="nome" placeholder="Enter your name" required />
+            <input type="text" name="nome" id="nome" placeholder="Enter your name"/>
             <span id="txtNome"></span>
 
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            <input type="email" name="email" id="email" placeholder="Enter your email"/>
             <span id="txtEmail"></span>
             
             <label for="assunto">Subject:</label>
-            <input type="text" name="assunto" id="assunto" placeholder="Enter your message" required></textarea>
+            <input type="text" name="assunto" id="assunto" placeholder="Enter your message"></textarea>
             <span id="txtAssunto"></span>
             
             <label for="mensagem">Message:</label>
@@ -125,5 +107,8 @@
     <footer class="flex">
       <p>&copy; 2025 Isis Okamoto. All rights reserved.</p>
     </footer>
+
+    <!-- Script JS -->
+      <script src="./assets/js/script.js"></script>
   </body>
 </html>
