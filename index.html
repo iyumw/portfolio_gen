@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generation Portfolio Project" />
+    <meta name="author" content="Isis Okamoto" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon/favicon.ico" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <title>Portfolio - Isis</title>
+  </head>
+  <body>
+    <header class="flex menu_container">
+      <div id="header_content" class="menu_content">
+        <div id="titulo">
+          <a href="#">Yume's Portfolio</a>
+        </div>
+
+        <div class="flex" id="menu">
+          <nav>
+            <div id="menu_links">
+              <ul class="flex menu_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="home_container">
+        <article id="home_text" class="flex home_content">
+          <h4>Welcome to My Portfolio!!</h4>
+          <h1>Transforming Ideas into Smart Solutions</h1>
+          <p>
+            Hello, my name is Isis Yume! Here, you will find some of the projects I have developed using HTML, CSS, React, TypeScript, NestJS, SQL, and more. Feel free to explore my work, and if you want to know more, get in touch!
+          </p>
+          <a class="botao" href="http://linkedin.com/in/isis-okamoto" target="_blank">Explore</a>
+        </article>
+
+        <article id="home_image" class="home_content">
+          <img
+            src="./assets/img/Witch.gif"
+            alt="Animated Astronaut Helmet"
+          />
+        </article>
+      </section>
+
+      <section id="about" class="flex about_container">
+        
+      </section>
+
+      <section id="contact" class="contato_container">
+        <div class="contact-image-container">
+          <img src="./assets/img/coven.svg" alt="Bruxinhas juntas" class="contact-image" />
+        </div>
+        <article id="redes_sociais" class="contato_content">
+          <h4>Contact Me</h4>
+          <p>Get in touch! If you want to know more about my work, exchange ideas, or discuss potential collaborations, send me a message. I am available on LinkedIn, GitHub, and email!</p>
+            <div class="social_container">
+              <a href="http://linkedin.com/in/isis-okamoto" target="_blank" class="social_icon">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn Icon" />
+              </a>
+              <a href="http://github.com/iyumw" target="_blank" class="social_icon">
+                <img src="./assets/img/github.svg" alt="GitHub Icon" />
+              </a>
+              <a href="http://instagram.com/_iyume" target="_blank" class="social_icon">
+                <img src="./assets/img/instagram.svg" alt="Instagram Icon" />
+              </a>
+            </div>
+        </article>
+        
+        <form action="https://formsubmit.co/b0132c38301e12767e2b8c54d6e59e0f" method="POST" id="formulario">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="nome">Name:</label>
+            <input type="text" name="nome" id="nome" placeholder="Enter your name"/>
+            <span id="txtNome"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"/>
+            <span id="txtEmail"></span>
+            
+            <label for="assunto">Subject:</label>
+            <input type="text" name="assunto" id="assunto" placeholder="Enter your message"></textarea>
+            <span id="txtAssunto"></span>
+            
+            <label for="mensagem">Message:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Enter your message" required></textarea>
+            <span id="txtMensagem"></span>
+
+            <button type="submit" class="botao">Send</button>
+      </section>
+    </main>
+    <footer class="flex">
+      <p>&copy; 2025 Isis Okamoto. All rights reserved.</p>
+    </footer>
+
+    <!-- Script JS -->
+      <script src="./assets/js/script.js"></script>
+  </body>
+</html>
